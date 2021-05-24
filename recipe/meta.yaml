@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: mlapi_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/mlapi_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlapi/mlapi_{{ version }}.tar.gz
   sha256: 3314e96f4a467a9b6337b4fb16bc5a22e5dee641745ea511c24c327457997b08
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 1003
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,17 +42,11 @@ about:
   license: MIT
   summary: Provides 'R6' abstract classes for building machine learning models  with 'scikit-learn' like API. <http://scikit-learn.org/> is a popular module  for 'Python' programming language which design became de facto a standard  in industry for machine learning tasks.
   license_family: MIT
-
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
+
 extra:
   recipe-maintainers:
     - conda-forge/r
     - CurtLH
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
