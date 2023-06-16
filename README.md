@@ -1,11 +1,11 @@
-About r-mlapi
-=============
+About r-mlapi-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlapi-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=mlapi
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlapi-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides 'R6' abstract classes for building machine learning models  with 'scikit-learn' like API. <http://scikit-learn.org/> is a popular module  for 'Python' programming language which design became de facto a standard  in industry for machine learning tasks.
 
